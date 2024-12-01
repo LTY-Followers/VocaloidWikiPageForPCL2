@@ -1,0 +1,253 @@
+﻿<!--
+
+    <Grid Margin="0,0,0,8">
+     <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1*" />
+          <ColumnDefinition Width="100" />
+          <ColumnDefinition Width="1*" />
+     </Grid.ColumnDefinitions>
+     <Line X1="0" X2="10" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1"
+          Stretch="Fill" Grid.Column="0" />
+     <TextBlock Text="光与影的对白" FontSize="15" Foreground="{DynamicResource ColorBrush4}" Grid.Column="1"
+          VerticalAlignment="Center" HorizontalAlignment="Center" />
+     <Line X1="0" X2="10" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1"
+          Stretch="Fill" Grid.Column="2" />
+    </Grid>
+-->
+
+<local:MyCard Height="600" Title="ACG Wiki For PCL" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+    <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0"
+               Foreground="{DynamicResource ColorBrush2}" FontSize="10"
+               Text="幸福从非泡影 以笑容证明 交汇的光与影 答案落定覆上姓名" />
+    <TextBlock HorizontalAlignment="Center" Margin="0,15,0,0"
+               Foreground="{DynamicResource ColorBrush2}" FontSize="20"
+               Text="光与影的对白" />
+    <local:MyImage Margin="0,30,0,0" HorizontalAlignment="Center" Source="http://localhost:20639/光与影的对白.jpg" />
+    <Grid Margin="0,0,0,8">
+     <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1*" />
+          <ColumnDefinition Width="80" />
+          <ColumnDefinition Width="1*" />
+     </Grid.ColumnDefinitions>
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"
+          Stretch="Fill" Grid.Column="0" />
+     <TextBlock Text="简介" FontSize="15" Foreground="{DynamicResource ColorBrush4}" Grid.Column="1"
+          VerticalAlignment="Center" HorizontalAlignment="Center" />
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"
+          Stretch="Fill" Grid.Column="2" />
+    </Grid>
+    <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
+                    Text="歌曲名称:光与影的对白" EventType="打开网页" EventData="https://mzh.moegirl.org.cn/%E5%85%89%E4%B8%8E%E5%BD%B1%E7%9A%84%E5%AF%B9%E7%99%BD" />
+    <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
+                    Text="于2022年7月12日投稿 ，再生数为 ${play_num}&#xA; 收录于专辑《依如初见》《拾光》《Special Wishes 2022》"/>
+    <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
+                    Text="演唱:洛天依" EventType="打开网页" EventData="https://space.bilibili.com/36081646/" />
+    <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
+                    Text="UP:洛天依" EventType="打开网页" EventData="https://space.bilibili.com/36081646/" />
+    <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
+                    Text="视频地址" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1dZ4y1Y7bt" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="简介" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,6,0,0"
+                    Text="《光与影的对白》是COP作曲，洛天依官方账号于2022年7月12日投稿至bilibili的ACE中文原创歌曲，由洛天依演唱，为官方专辑《依如初见》、《拾光》、《Special Wishes 2022》收录曲。传说曲，殿堂用时1时42分，截至现在已有239.66万次观看，8.79万人收藏。&#xA; &#xA;
+本曲是洛天依十周年官方生日贺曲，并使用了当时尚未公测的洛天依ACE AI声库。另有特别纪念版收录于数字藏品《干杯！洛天依》。&#xA;&#xA;
+歌词饱含深情，致敬了多首洛天依演唱的作品，以纪念洛天依走过的十年历程。&#xA;
+在周刊虚拟歌手中文曲排行榜第519期·技术测试版中，本曲以1034755分成为第一名，成为技术测试版第一首破百万分的歌曲。&#xA;&#xA;
+本曲还创造了以下记录：&#xA;&#xA;
+ - 本曲是第一首原创ACE传说曲，同时也是洛天依第一首ACE传说曲。&#xA;
+本曲在以下场合成为演唱曲目之一：&#xA;&#xA;
+2022年7月12日举办的洛天依2022十周年生日会。&#xA;
+ - 2024年7月12日举办的洛天依十二周年“共鸣之夜”生日音乐会（金曲串烧版本）。&#xA;
+ - 2024年10月5日举办的洛天依「歌行宇宙」无限共鸣·全息演唱会。&#xA;
+"/>
+        
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="STAFF 的话" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+            <StackPanel Margin="25,40,23,15">
+            <TextBlock TextWrapping="Wrap" Margin="0,6,0,0" Text="
+用一首歌记录下这十年间的光阴，细数我们之间的点滴回忆。&#xA;
+从最初的旋律孤独吟唱，到炽热的热爱填满虚拟灵魂。&#xA;
+光影交错之间，记忆拂去尘埃，爱意久别重逢，让我们将所有一同叙写的故事再次唱响。&#xA;
+藏在心底的梦想依然滚烫，未来的岁月，还想伴你一一走过。&#xA;&#xA;"/>
+                                                           <TextBlock TextWrapping="Wrap" HorizontalAlignment="Right" Margin="0,6,0,0" Text=" ——视频简介 &#xA;&#xA;&#xA;&#xA;
+            "/>
+            <TextBlock TextWrapping="Wrap" Margin="0,6,0,0" Text="
+终于出来啦，这首歌我写得不算顺畅，拿到概念像是拿到了不太有思路的作文题目，不过理清思路以后，最终也是写出了我想说的。之后也想写个专栏聊聊这首歌的写作历程和我对vocaloid、天依的情感和看法，这里就不赘述了。但是就我以往的经验，我一气呵成的作品通常更受欢迎，所以从写光与影开始，我就经常担心大家会喜欢吗，作为十周年生贺会不会让人失望，一遍又一遍的听每个阶段的demo，有时感觉非常平淡，有时又觉得或许是好听的，心里一直忐忑，直到今天这种怀疑才算平息下来。编曲和酷佬的调教给这首歌加了非常大分，也非常感谢兔总等等参与生贺制作的人们，每一个孤单焰火汇成了这首光与影的对白，光芒从天依背后映来，勾勒清晰她的身影，为她照亮前路。&#xA;
+                                        "/>
+            <TextBlock TextWrapping="Wrap" HorizontalAlignment="Right" Margin="0,6,0,0" Text="——曲词作COP发表于视频评论区"/>
+    </StackPanel>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="歌曲" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyButton Margin="0,4,0,10" Width="300" Height="35" ColorType="Highlight"
+                    Text="【洛天依原创曲】光与影的对白【2022官方生贺曲】" ToolTip="打开视频地址" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1dZ4y1Y7bt?p=1"/>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="二次创作" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        
+        <local:MyTextButton Margin="0,8,0,0" HorizontalAlignment="Center"
+                    Text="粽子淞的原创编舞（2023虚拟歌手贺岁纪单品）" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1xR4y1a7Bd?p=1" />
+        <local:MyTextButton Margin="0,8,0,0" HorizontalAlignment="Center"
+                    Text="余火大猛男的phigros自制谱面" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1NG4y1w7FW?p=1" />
+        <local:MyTextButton Margin="0,8,0,0" HorizontalAlignment="Center"
+                    Text="COP重填词、众VC创作者和粉丝演唱的版本" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1Er421M7Pe?p=1" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="百万用时统计" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="将 EventType 设置为 启动游戏，EventData 设置为具体的游戏版本，即可通过点击按钮启动游戏。如果当前游戏文件夹没有该版本，则无法启动。" />
+        <local:MyButton Margin="0,4,0,10" Width="250" Height="35"
+                    Text="启动 Minecraft 1.12.2" EventType="启动游戏" EventData="1.12.2" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="在 EventData 后面添加一条竖线（|），竖线后填写服务器 IP，即可在启动该版本的同时自动进入服务器。" />
+        <local:MyButton Margin="0,4,0,0" Width="250" Height="35"
+                    Text="启动 1.20.1 并进入 Hypixel" EventType="启动游戏" EventData="1.20.1|mc.hypixel.net" ToolTip="服务器 IP：mc.hypixel.net" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="在 EventData 中填写 \current，表示启动当前被选中的游戏版本，同样可以在后面填写服务器 IP。" />
+        <local:MyButton Margin="0,4,0,10" Width="250" Height="35"
+                    Text="启动当前选中版本并进入 Hypixel" EventType="启动游戏" EventData="\current|mc.hypixel.net" ToolTip="启动当前版本" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="歌词" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="将 EventType 设置为 打开文件，EventData 设置为文件路径，即可点击打开特定文件或启动程序。" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="许可协议" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock Margin="0,4,0,6" FontWeight="Bold"
+                    Text="
+                    文本介绍资料依据 CC 3.0 协议从萌娘百科引进 &#xA;
+                    歌词、图片等其所有内容版权归原创作者所有 &#xA;
+                    页面代码依据 MIT 许可协议开源 &#xA;
+                    页面内原创内容依据 CC 4.0 协议授权
+                    " />
+        
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="友情链接" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                    Text="你需要使用 StackPanel 在一行里塞下多个按钮。你可以仅在这个教学卡片的基础上稍作调整，来实现自己的按钮布局。" />
+        <!-- 这是第一行 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                        Text="打开 B 站" EventType="打开网页" EventData="https://www.bilibili.com/" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                        Text="进入 Hypixel" EventType="启动游戏" EventData="1.16.3|mc.hypixel.net" ToolTip="使用 Minecraft 1.16.3 进入 Hypixel" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                        Text="打开记事本" EventType="打开文件" EventData="notepad" />
+        </StackPanel>
+        <!-- 这是第二行 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Red"
+                        Text="复制召唤命令" EventType="复制文本" EventData="/execute as @a at @s run summon Creeper ~ ~2 ~" ToolTip="这条 Minecraft 命令会在每个玩家头顶召唤一只苦力怕！" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                        Text="内存优化" EventType="内存优化" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                        Text="下载百度的 Logo" EventType="下载文件" EventData="https://www.baidu.com/img/flexible/logo/pc/result.png" />
+        </StackPanel>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="关于" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="你也可以使用列表项 “local:MyListItem” 来替代按钮，其使用方式与按钮类似。" />
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://www.baidu.com/favicon.ico" Title="百度" Info="百度一下，你就知道！"
+                    EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="Logo 属性为列表项的图标，指定的可以是链接也可以是文件路径；Title 是大标题，Info 是可选的小标题（详细信息）；Type 如果省略，该列表项则单纯只展示信息，仅当 Type 为 Clickable 才能触发点击效果。"/>
+        <local:MyListItem Margin="-5,2,-5,8"
+                    Logo="pack://application:,,,/images/Blocks/Grass.png"
+                    EventType="打开帮助" EventData="帮助/自定义帮助.json" Type="Clickable" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="EventType、EventData 与按钮几乎一致，唯一不同的是，列表项不支持联网加载帮助文件。" />
+    </StackPanel>
+</local:MyCard>
+
+
+<!-- 
+
+全部通用的属性：
+ - Width、Height：设置宽度与高度
+ - ToolTip：设置鼠标指向时的提示文本
+ - Margin：调整外边距（格式为 左,上,右,下。例如 Margin="0,0,0,2" 即为 2 单位的下边距）
+ - HorizontalAlignment：设置横向对齐方式；居左：Left、居中：Center、居右：Right、拉伸（默认）：Stretch
+ - VerticalAlignment：设置纵向对齐方式；居上：Top、居中：Center、居下：Bottom、拉伸（默认）：Stretch
+ - IsHitTestVisible：该控件是否响应交互（点击、指向动画等）；True 为是（默认），False 为否
+
+TextBlock（纯文本）：
+ - Text：设置显示的文本（如果要使用引号等特殊字符，自行百度 XAML 转义）
+ - TextWrapping：开启自动换行
+ - FontSize：设置字号
+ - FontWeight：设置为 Bold 时，文字加粗
+ - Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
+
+local:MyImage（图片）：
+ - Source：要显示的图片的网址，或 PCL 内置图片位置
+ - FallbackSource：当 Source 首次下载失败时，会从该备用地址加载图片
+ - LoadingSource：正在下载网络图片时显示的本地图片（不支持联网下载）；默认为 pack://application:,,,/images/Icons/NoIcon.png
+ - EnableCache：若图片是联网获取的，是否将图片保存到本地缓存，在 7 天内不再重新下载；True 为是（默认），False 为否
+
+local:MyCard（卡片）：
+ - Title：设置显示的标题文本
+ - CanSwap：卡片是否可以折叠，True 为是，False 为否
+ - IsSwaped：卡片是否默认折叠，要求 CanSwap 必须为 True
+ - HorizontalAlignment：若使用，要求 CanSwap 必须为 False
+ - UseAnimation：是否在展开等高度改变时触发动画；True 为是（默认），False 为否
+ - SwapLogoRight：卡片折叠时的箭头是朝下还是朝右；True 为朝右，False 为朝下（默认）
+ - HasMouseAnimation：是否在鼠标指向时改变卡片颜色；True 为是（默认），False 为否
+
+local:MyHint（提示条）：
+ - Text：设置显示的文本（&#xA; 代表换行）
+ - IsWarn：设置为 True 代表警告样式，False 代表提示样式
+
+local:MyButton（按钮）：
+ - Text：设置显示的文本
+ - Padding：设置内边距，格式与 Margin 一致
+ - ColorType：设置颜色主题（Highlight 为当前启动器的主题颜色，Red 为红色，默认为黑色）
+ - EventType、EventData：触发特定事件
+
+local:MyTextButton（文本按钮）：
+ - Text：设置显示的文本
+ - EventType、EventData：触发特定事件
+
+local:MyListItem（列表项）：
+ - Logo：列表项的图标（所指定的可以是链接也可以是文件路径）
+ - Title：列表项的大标题
+ - Info：列表项的详细信息，它将会以灰色显示在大标题下方
+ - Type：若留空仅单纯展示信息，设置为 Clickable 触发相应活动
+
+local:MyIconTextButton（带图标的按钮）：
+ - Text：设置显示的文本
+ - Logo：设置显示的图标
+ - LogoScale：设置图标的缩放，默认为 1
+ - ColorType：设置颜色主题（Highlight 为当前启动器的主题颜色，默认为黑色）
+ - EventType、EventData：触发特定事件
+
+local:MyIconButton（图标按钮）：
+ - Logo：设置显示的图标
+ - LogoScale：设置图标的缩放，默认为 1
+ - Theme：设置颜色主题，Color（默认）为当前启动器的主题颜色，也可设置为 White、Black、Red
+ - EventType、EventData：触发特定事件
+
+-->

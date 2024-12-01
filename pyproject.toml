@@ -1,0 +1,19 @@
+[project]
+name = "PCL2ACGWikiPage"
+version = "0.1.0"
+description = "基于 Media API 的自动化 ACGWiki 爬取工具"
+authors = [
+    {name = "wuliaodexiaoluo", email = "wuliaodexiaoluo@outlook.com"},
+]
+dependencies = ["requests>=2.32.3", "flask>=3.1.0", "flask-limiter>=3.9.2"]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
