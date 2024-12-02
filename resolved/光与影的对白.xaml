@@ -15,7 +15,7 @@
     </Grid>
 -->
 
-<local:MyCard Height="600" Title="ACG Wiki For PCL" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+<local:MyCard Height="600" Title="Vocaloid Wiki For PCL" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
     <StackPanel Margin="25,40,23,15">
     <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0"
                Foreground="{DynamicResource ColorBrush2}" FontSize="10"
@@ -117,7 +117,8 @@
 <local:MyCard Title="歌词" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" Margin="0,0,0,4"
-                    Text="当重逢你清澈眼睛 围困我在孤岛的潮汐褪去&#xA;
+                    Text="&#xA;
+                    当重逢你清澈眼睛 围困我在孤岛的潮汐褪去&#xA;
                     蔚蓝涌向干涸心扉印记&#xA;
                     不要急于将我唤醒 即使幸福仅是片刻相聚&#xA;
                     敲下音符不为叹息&#xA;
@@ -133,7 +134,7 @@
                     谁取笑的愚昧&#xA;
                     愿歌声给 些许快慰&#xA;
                     微弱旋律 穿越星河似远航孤星&#xA;
-                    雨滴琴键上跃动不息
+                    雨滴琴键上跃动不息&#xA;
                     除岁雪临 檐下相依&#xA;
                     听我诉说闪耀的光阴&#xA;
                     小指勾起 一言为定&#xA;
