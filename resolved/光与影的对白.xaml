@@ -23,7 +23,7 @@
     <TextBlock HorizontalAlignment="Center" Margin="0,15,0,0"
                Foreground="{DynamicResource ColorBrush2}" FontSize="20"
                Text="光与影的对白" />
-    <local:MyImage Margin="0,30,0,0" HorizontalAlignment="Center" Source="http://localhost:20639/光与影的对白.jpg" />
+    <local:MyImage Margin="0,30,0,0" HorizontalAlignment="Center" Source="https://s2.loli.net/2024/12/01/gf5WwC6dKs1XZ2l.jpg" />
     <Grid Margin="0,0,0,8">
      <Grid.ColumnDefinitions>
           <ColumnDefinition Width="1*" />
