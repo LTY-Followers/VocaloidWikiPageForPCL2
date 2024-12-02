@@ -1,0 +1,42 @@
+{
+    "TextWarp":{
+        "Format":"LF",
+        "code":"\n"
+    },
+    "Card":{
+        "id":"local:MyCard",
+        "Usage":"<${id} ${arguments}> ${TextWarp} ${control} ${TextWarp} </${id}>",
+        "argument":{
+            "title":{
+                "Usage":"Title=${data}",
+                "datatype":"String"
+            },
+            "weight":{
+                "Usage":"Weight=${data}",
+                "datatype":"Int"
+            },
+            "height":{
+                "Usage":"Height=${datatype}",
+                "datatype":"Int"
+            },
+            "canswap":{
+                "Usage":"CanSwap=${data}",
+                "datatype":"String<Boolean>"
+            },
+            "isswaped":{
+                "Usage":"IsSwaped=${data}",
+                "datatype":"String<Boolean>"
+            }
+        }
+    },
+    "local:MyCard":{
+        "alias":"Card"
+    },
+    "MyCard":{
+        "alias":"Card"
+    },
+    "TextBlock":{
+        "code":"",
+        "end_code":"/>"
+    }
+}

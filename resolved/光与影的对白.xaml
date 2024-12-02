@@ -107,18 +107,10 @@
 
 <local:MyCard Title="百万用时统计" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-                    Text="将 EventType 设置为 启动游戏，EventData 设置为具体的游戏版本，即可通过点击按钮启动游戏。如果当前游戏文件夹没有该版本，则无法启动。" />
-        <local:MyButton Margin="0,4,0,10" Width="250" Height="35"
-                    Text="启动 Minecraft 1.12.2" EventType="启动游戏" EventData="1.12.2" />
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-                    Text="在 EventData 后面添加一条竖线（|），竖线后填写服务器 IP，即可在启动该版本的同时自动进入服务器。" />
-        <local:MyButton Margin="0,4,0,0" Width="250" Height="35"
-                    Text="启动 1.20.1 并进入 Hypixel" EventType="启动游戏" EventData="1.20.1|mc.hypixel.net" ToolTip="服务器 IP：mc.hypixel.net" />
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-                    Text="在 EventData 中填写 \current，表示启动当前被选中的游戏版本，同样可以在后面填写服务器 IP。" />
-        <local:MyButton Margin="0,4,0,10" Width="250" Height="35"
-                    Text="启动当前选中版本并进入 Hypixel" EventType="启动游戏" EventData="\current|mc.hypixel.net" ToolTip="启动当前版本" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="20"
+                    Text="投稿时间：2022-07-12 21:30" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="20"
+                    Text="投稿时间：2022-07-12 21:30" />
     </StackPanel>
 </local:MyCard>
 
