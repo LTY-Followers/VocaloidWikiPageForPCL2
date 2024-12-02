@@ -40,11 +40,11 @@
     <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
                     Text="歌曲名称:光与影的对白" EventType="打开网页" EventData="https://mzh.moegirl.org.cn/%E5%85%89%E4%B8%8E%E5%BD%B1%E7%9A%84%E5%AF%B9%E7%99%BD" />
     <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
-                    Text="于2022年7月12日投稿 ，再生数为 ${play_num}&#xA; 收录于专辑《依如初见》《拾光》《Special Wishes 2022》"/>
+                    Text="于2022年7月12日投稿 ，再生数为 239.89 万&#xA; 收录于专辑《依如初见》《拾光》《Special Wishes 2022》"/>
     <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
-                    Text="演唱:洛天依" EventType="打开网页" EventData="https://space.bilibili.com/36081646/" />
+                    Text="演唱:洛天依" EventType="打开网页" EventData="https://mzh.moegirl.org.cn/%E6%B4%9B%E5%A4%A9%E4%BE%9D" />
     <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
-                    Text="UP:洛天依" EventType="打开网页" EventData="https://space.bilibili.com/36081646/" />
+                    Text="UP:洛天依" EventType="打开网页" EventData="https://mzh.moegirl.org.cn/%E6%B4%9B%E5%A4%A9%E4%BE%9D" />
     <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
                     Text="视频地址" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1dZ4y1Y7bt" />
     </StackPanel>
