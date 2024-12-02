@@ -1,7 +1,7 @@
 [project]
-name = "PCL2ACGWikiPage"
+name = "PCL2 Vocaloid Wiki Page"
 version = "0.1.0"
-description = "基于 Media API 的自动化 ACGWiki 爬取工具"
+description = "基于 Media API 的自动化百科 WPF 页面生成工具"
 authors = [
     {name = "wuliaodexiaoluo", email = "wuliaodexiaoluo@outlook.com"},
 ]

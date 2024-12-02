@@ -1,31 +1,44 @@
 {
-    "TextWarp":{
-        "Format":"LF",
-        "code":"\n"
+    "TextWrap":{
+        "Warps":[
+            {
+                "format":"LF",
+                "code":"\n"
+            },
+            {
+                "format":"XAML",
+                "code":"&#xA;"
+            }
+        ]    
     },
     "Card":{
         "id":"local:MyCard",
-        "Usage":"<${id} ${arguments}> ${TextWarp} ${control} ${TextWarp} </${id}>",
-        "argument":{
+        "Usage":"<${id} ${arguments}> ${TextWrap:LF} ${control} ${TextWrap:LF} </${id}>",
+        "arguments":{
             "title":{
                 "Usage":"Title=${data}",
-                "datatype":"String"
+                "datatype":"String",
+                "Valid":["any"]
             },
             "weight":{
                 "Usage":"Weight=${data}",
-                "datatype":"Int"
+                "datatype":"Int",
+                "Valid":["any"]
             },
             "height":{
                 "Usage":"Height=${datatype}",
-                "datatype":"Int"
+                "datatype":"Int",
+                "Valid":["any"]
             },
             "canswap":{
                 "Usage":"CanSwap=${data}",
-                "datatype":"String<Boolean>"
+                "datatype":"String<Boolean>",
+                "Valid":["True","False"]
             },
             "isswaped":{
                 "Usage":"IsSwaped=${data}",
-                "datatype":"String<Boolean>"
+                "datatype":"String<Boolean>",
+                "Valid":["True","False"]
             }
         }
     },
@@ -36,7 +49,19 @@
         "alias":"Card"
     },
     "TextBlock":{
-        "code":"",
-        "end_code":"/>"
+        "id":"TextBlock",
+        "Usage":"<$id ${arguments} />",
+        "arguments":{
+            "Text":{
+                "Usage":"Text=${data}",
+                "datatype":"String",
+                "Valid":["any"]
+            },
+            "TextWrapping":{
+                "Usage":"TextWrapping=${data}",
+                "datatype":"String",
+                "Valid":["NoWrap","Wrap","WrapWithOverflow"]
+            }
+        }
     }
 }

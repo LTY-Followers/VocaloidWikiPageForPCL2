@@ -1,18 +1,5 @@
 ﻿<!--
-
-    <Grid Margin="0,0,0,8">
-     <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="1*" />
-          <ColumnDefinition Width="100" />
-          <ColumnDefinition Width="1*" />
-     </Grid.ColumnDefinitions>
-     <Line X1="0" X2="10" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1"
-          Stretch="Fill" Grid.Column="0" />
-     <TextBlock Text="光与影的对白" FontSize="15" Foreground="{DynamicResource ColorBrush4}" Grid.Column="1"
-          VerticalAlignment="Center" HorizontalAlignment="Center" />
-     <Line X1="0" X2="10" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1"
-          Stretch="Fill" Grid.Column="2" />
-    </Grid>
+author:wuliaodexiaoluo<wuliaodexiaoluo@outlook.com>
 -->
 
 <local:MyCard Height="600" Title="Vocaloid Wiki For PCL" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
@@ -23,7 +10,7 @@
     <TextBlock HorizontalAlignment="Center" Margin="0,15,0,0"
                Foreground="{DynamicResource ColorBrush2}" FontSize="20"
                Text="${title}" />
-    <local:MyImage Margin="0,30,0,0" HorizontalAlignment="Center" Source="http://localhost:20639/光与影的对白.jpg" />
+    <local:MyImage Margin="0,30,0,0" HorizontalAlignment="Center" Source="${img_url}" />
     <Grid Margin="0,0,0,8">
      <Grid.ColumnDefinitions>
           <ColumnDefinition Width="1*" />
@@ -42,9 +29,9 @@
     <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
                     Text="于2022年7月12日投稿 ，再生数为 ${play_num}&#xA; 收录于专辑 ${record}"/>
     <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
-                    Text="演唱:洛天依" EventType="打开网页" EventData="https://space.bilibili.com/${up_uid}" />
+                    Text="演唱:${singer}" EventType="打开网页" EventData="https://space.bilibili.com/${up_uid}" />
     <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
-                    Text="UP:洛天依" EventType="打开网页" EventData="https://space.bilibili.com/${up_uid}" />
+                    Text="UP:${up}" EventType="打开网页" EventData="https://space.bilibili.com/${up_uid}" />
     <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
                     Text="视频地址" EventType="打开网页" EventData="https://www.bilibili.com/video/${bv}" />
     </StackPanel>
@@ -62,7 +49,7 @@
     <StackPanel Margin="25,40,23,15">
             <StackPanel Margin="25,40,23,15">
             <TextBlock TextWrapping="Wrap" Margin="0,6,0,0" Text="${video_description}"/>
-                                                           <TextBlock TextWrapping="Wrap" HorizontalAlignment="Right" Margin="0,6,0,0" Text=" ——视频简介 &#xA;&#xA;&#xA;&#xA;
+            <TextBlock TextWrapping="Wrap" HorizontalAlignment="Right" Margin="0,6,0,0" Text=" ——视频简介 &#xA;&#xA;&#xA;&#xA;
             "/>
             <TextBlock TextWrapping="Wrap" Margin="0,6,0,0" Text="
 ${Staff_say}"/>
@@ -74,7 +61,7 @@ ${Staff_say}"/>
 <local:MyCard Title="歌曲" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
     <StackPanel Margin="25,40,23,15">
         <local:MyButton Margin="0,4,0,10" Width="300" Height="35" ColorType="Highlight"
-                    Text="【洛天依原创曲】光与影的对白【2022官方生贺曲】" ToolTip="打开视频地址" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1dZ4y1Y7bt?p=1"/>
+                    Text="${video_name}" ToolTip="打开视频地址" EventType="打开网页" EventData="https://www.bilibili.com/video/${bv}"/>
     </StackPanel>
 </local:MyCard>
 
@@ -82,12 +69,8 @@ ${Staff_say}"/>
     <StackPanel Margin="25,40,23,15">
         
         <local:MyTextButton Margin="0,8,0,0" HorizontalAlignment="Center"
-                    Text="粽子淞的原创编舞（2023虚拟歌手贺岁纪单品）" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1xR4y1a7Bd?p=1" />
-        <local:MyTextButton Margin="0,8,0,0" HorizontalAlignment="Center"
-                    Text="余火大猛男的phigros自制谱面" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1NG4y1w7FW?p=1" />
-        <local:MyTextButton Margin="0,8,0,0" HorizontalAlignment="Center"
-                    Text="COP重填词、众VC创作者和粉丝演唱的版本" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1Er421M7Pe?p=1" />
-    </StackPanel>
+                    Text="${remake_video_name}" EventType="打开网页" EventData="https://www.bilibili.com/video/${bv}" />
+        </StackPanel>
 </local:MyCard>
 
 <local:MyCard Title="百万用时统计" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
