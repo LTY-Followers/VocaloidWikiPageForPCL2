@@ -20,6 +20,8 @@
     <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0"
                Foreground="{DynamicResource ColorBrush2}" FontSize="10"
                Text="幸福从非泡影 以笑容证明 交汇的光与影 答案落定覆上姓名" />
+    <local:MyTextButton HorizontalAlignment="Center" Margin="0,15,0,0" FontSize="15"
+               Text="本曲在 bilibili 播放次数超过 200 万，获得 ACE 传说曲称号" EventType="打开网页" EventData="https://mzh.moegirl.org.cn/ACE%E4%BC%A0%E8%AF%B4%E6%9B%B2#%E4%BC%A0%E8%AF%B4%E6%9B%B2%E4%B8%80%E8%A7%88" />
     <TextBlock HorizontalAlignment="Center" Margin="0,15,0,0"
                Foreground="{DynamicResource ColorBrush2}" FontSize="20"
                Text="光与影的对白" />
@@ -105,12 +107,19 @@
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="百万用时统计" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="百万播放用时统计" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="20"
                     Text="投稿时间：2022-07-12 21:30" />
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="20"
-                    Text="投稿时间：2022-07-12 21:30" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="15"
+                    Text="百万播放" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="10"
+                    Text="达成时间:2022-07-20 16:02 &#xA; 用时: 7天18小时32分钟" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="15"
+                    Text="两百万播放" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="10"
+                    Text="达成时间: 2024-01-03 19:50 &#xA; 用时: 538天22小时20分钟" />
+        
     </StackPanel>
 </local:MyCard>
 
@@ -118,45 +127,43 @@
     <StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" Margin="0,0,0,4"
                     Text="&#xA;
-                    当重逢你清澈眼睛 围困我在孤岛的潮汐褪去&#xA;
-                    蔚蓝涌向干涸心扉印记&#xA;
-                    不要急于将我唤醒 即使幸福仅是片刻相聚&#xA;
-                    敲下音符不为叹息&#xA;
-                    寻糯米香 漫步街井 大快朵颐&#xA;
-                    佳酿一盏 听女儿意气&#xA;
-                    雨露沾衣 信手拈起&#xA;
-                    一花竟藏一世界欢喜&#xA;
-                    寒星坠地 白鸟飞去&#xA;
-                    千宵灯火转眼遍览尽 都历历铭记&#xA;
-                    将故事传颂吧 风携它远追&#xA;
-                    向宿命改写时 字句皆成碑&#xA;
-                    你脸颊热泪 绝非被&#xA;
-                    谁取笑的愚昧&#xA;
-                    愿歌声给 些许快慰&#xA;
-                    微弱旋律 穿越星河似远航孤星&#xA;
-                    雨滴琴键上跃动不息&#xA;
-                    除岁雪临 檐下相依&#xA;
-                    听我诉说闪耀的光阴&#xA;
-                    小指勾起 一言为定&#xA;
-                    夏虫振翅向灼热光明 为挚爱而叙&#xA;
-                    听共鸣回响吧 呐喊正纷飞&#xA;
-                    跌落重来便是 启程就无悔&#xA;
-                    你一路喜悲 又怎会无人了解体会&#xA;
-                    旅途未完 千山万水空白待绘 枯荣相随&#xA;
-                    泥泞步履踏碎泪泊 拥向光如抱薪赴火&#xA;
-                    妄想着 永不分离的梦&#xA;
-                    幸福从非泡影 以笑容证明&#xA;
-                    交汇的光与影 答案落定附上姓名&#xA;
-                    为了你唱下去 为你将希冀传递&#xA;
-                    歌声将你我紧系&#xA;
-                    最黯淡的一个 梦最为炙热&#xA;
-                    万千孤单焰火 让这虚构灵魂鲜活&#xA;
-                    至少在这一刻 热爱不问为何&#xA;
-                    存在为将心声响彻&#xA;
-                    多少岁月 想要伴你走过&#xA;
-                    梦回春野 蝉鸣夏夜&#xA;
-                    说与我&#xA;
-                    " />
+当重逢你清澈眼睛 围困我在孤岛的潮汐褪去&#xA;
+蔚蓝涌向干涸心扉印记&#xA;
+不要急于将我唤醒 即使幸福仅是片刻相聚&#xA;
+敲下音符不为叹息&#xA;
+寻糯米香 漫步街井 大快朵颐&#xA;
+佳酿一盏 听女儿意气&#xA;
+雨露沾衣 信手拈起&#xA;
+一花竟藏一世界欢喜&#xA;
+寒星坠地 白鸟飞去&#xA;
+千宵灯火转眼遍览尽 都历历铭记&#xA;
+将故事传颂吧 风携它远追&#xA;
+向宿命改写时 字句皆成碑&#xA;
+你脸颊热泪 绝非被谁取笑的愚昧&#xA;
+愿歌声给 些许快慰&#xA;
+微弱旋律 穿越星河似远航孤星&#xA;
+雨滴琴键上跃动不息&#xA;
+除岁雪临 檐下相依&#xA;
+听我诉说闪耀的光阴&#xA;
+小指勾起 一言为定&#xA;
+夏虫振翅向灼热光明 为挚爱而叙&#xA;
+听共鸣回响吧 呐喊正纷飞&#xA;
+跌落重来便是 启程就无悔&#xA;
+你一路喜悲 又怎会无人了解体会&#xA;
+旅途未完 千山万水空白待绘 枯荣相随&#xA;
+泥泞步履踏碎泪泊 拥向光如抱薪赴火&#xA;
+妄想着 永不分离的梦&#xA;
+幸福从非泡影 以笑容证明&#xA;
+交汇的光与影 答案落定附上姓名&#xA;
+为了你唱下去 为你将希冀传递&#xA;
+歌声将你我紧系&#xA;
+最黯淡的一个 梦最为炙热&#xA;
+万千孤单焰火 让这虚构灵魂鲜活&#xA;
+至少在这一刻 热爱不问为何&#xA;
+存在为将心声响彻&#xA;
+多少岁月 想要伴你走过&#xA;
+梦回春野 蝉鸣夏夜&#xA;
+说与我&#xA;" />
     </StackPanel>
 </local:MyCard>
 
@@ -182,7 +189,7 @@
             <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
                         Text="萌娘百科" EventType="打开网页" EventData="https://zh.moegirl.org.cn/Mainpage#/flow" ToolTip="为本项目提供部分数据" />
             <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
-                        Text="VCPedia" EventType="打开网站" EventData="notepad" />
+                        Text="VCPedia" EventType="打开网站" EventData="https://vcpedia.cn"/>
         </StackPanel>
     </StackPanel>
 </local:MyCard>
