@@ -199,7 +199,7 @@
     <!-- 这是第一行 -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
-                        Text="关于主页" EventType="弹出窗口" EventData="关于|我是 wuliaodexiaoluo \n Vocaloid Wiki Page For PCL 的作者，非常感谢你能来使用这个主页 \n 感谢名单（不分前后）\n 相关组织:\n HomePlazaOFPCL2:提供了免费的服务器（虽然这个项目还是前瞻版本，还没上服务端） \n 贡献者/使用项目:\n (GitHub)shimoranla 为项目编写了部分源代码 \n (GitHub)MFn233 使用了部分简单主页的源代码" />
+                        Text="关于主页" EventType="弹出窗口" EventData="关于|我是 wuliaodexiaoluo \nVocaloid Wiki Page For PCL 的作者，非常感谢你能来使用这个主页 \n感谢名单（不分前后）\n相关组织:\nHomePlazaOFPCL2:提供了免费的服务器（虽然这个项目还是前瞻版本，还没上服务端）\n贡献者/使用项目:\n(GitHub)shimoranla 为项目编写了部分源代码 \n(GitHub)MFn233 使用了部分简单主页的源代码" />
         </StackPanel>
     </StackPanel>
 </local:MyCard>
