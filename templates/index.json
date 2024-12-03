@@ -1,0 +1,12 @@
+{
+    "mirror":[
+        {
+            "name":"PCL2HomePlaza",
+            "site":"http://pclhomeplazaoss.lingyunawa.top",
+            "port":[20639,26994]
+        },
+        {
+            "name":"GitHub Raw"
+        }
+    ]
+}
