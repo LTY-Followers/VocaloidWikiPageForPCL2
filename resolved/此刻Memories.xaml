@@ -1,4 +1,4 @@
-<local:MyCard Height="6050" Title="Vocaloid Wiki For PCL" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+<local:MyCard Height="650" Title="Vocaloid Wiki For PCL" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
     <StackPanel Margin="25,40,23,15">
     <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0"
                Foreground="{DynamicResource ColorBrush2}" FontSize="10"
@@ -61,7 +61,7 @@ Bilibili Dancing Festival2024——哔哩哔哩舞蹈嘉年华X洛天依&#xA;
 
 <local:MyCard Title="歌曲" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
     <StackPanel Margin="25,40,23,15">
-        <local:MyButton Margin="0,4,0,10" Width="350" Height="35" ColorType="Highlight"
+        <local:MyButton Margin="0,4,0,10" Width="400" Height="35" ColorType="Highlight"
                     Text="“在闪烁星光下相聚吧！”此刻Memories【洛天依XBDF2024十周年主题曲】" ToolTip="打开视频地址" EventType="打开网页" EventData="https://www.bilibili.com/BV1ds421A7EX"/>
     </StackPanel>
 </local:MyCard>
