@@ -5,7 +5,7 @@ import logging
 
 sys.path.append(pathlib.Path.cwd())
 
-from loginapi import login
+
 
 """
 try:
@@ -21,5 +21,3 @@ except Exception as e:
     
     exit(e)
 """
-
-login(usrname="LuoYofu@wuliaodexiaoluo",password="q46gfidckt674atpmis3h0t9oc160v1b")
