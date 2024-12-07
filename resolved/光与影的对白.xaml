@@ -15,15 +15,17 @@
     </Grid>
 -->
 
-<local:MyCard Height="600" Title="ACG Wiki For PCL" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+<local:MyCard Height="600" Title="Vocaloid Wiki For PCL" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
     <StackPanel Margin="25,40,23,15">
     <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0"
                Foreground="{DynamicResource ColorBrush2}" FontSize="10"
                Text="幸福从非泡影 以笑容证明 交汇的光与影 答案落定覆上姓名" />
+    <local:MyTextButton HorizontalAlignment="Center" Margin="0,15,0,0" FontSize="15"
+               Text="本曲在 bilibili 播放次数超过 200 万，获得 ACE 传说曲称号" EventType="打开网页" EventData="https://mzh.moegirl.org.cn/ACE%E4%BC%A0%E8%AF%B4%E6%9B%B2#%E4%BC%A0%E8%AF%B4%E6%9B%B2%E4%B8%80%E8%A7%88" />
     <TextBlock HorizontalAlignment="Center" Margin="0,15,0,0"
                Foreground="{DynamicResource ColorBrush2}" FontSize="20"
                Text="光与影的对白" />
-    <local:MyImage Margin="0,30,0,0" HorizontalAlignment="Center" Source="http://localhost:20639/光与影的对白.jpg" />
+    <local:MyImage Margin="0,30,0,0" HorizontalAlignment="Center" Source="https://s2.loli.net/2024/12/01/gf5WwC6dKs1XZ2l.jpg" />
     <Grid Margin="0,0,0,8">
      <Grid.ColumnDefinitions>
           <ColumnDefinition Width="1*" />
@@ -40,11 +42,11 @@
     <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
                     Text="歌曲名称:光与影的对白" EventType="打开网页" EventData="https://mzh.moegirl.org.cn/%E5%85%89%E4%B8%8E%E5%BD%B1%E7%9A%84%E5%AF%B9%E7%99%BD" />
     <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
-                    Text="于2022年7月12日投稿 ，再生数为 ${play_num}&#xA; 收录于专辑《依如初见》《拾光》《Special Wishes 2022》"/>
+                    Text="于2022年7月12日投稿 ，再生数为 239.89 万&#xA; 收录于专辑《依如初见》《拾光》《Special Wishes 2022》"/>
     <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
-                    Text="演唱:洛天依" EventType="打开网页" EventData="https://space.bilibili.com/36081646/" />
+                    Text="演唱:洛天依" EventType="打开网页" EventData="https://mzh.moegirl.org.cn/%E6%B4%9B%E5%A4%A9%E4%BE%9D" />
     <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
-                    Text="UP:洛天依" EventType="打开网页" EventData="https://space.bilibili.com/36081646/" />
+                    Text="UP:洛天依" EventType="打开网页" EventData="https://mzh.moegirl.org.cn/%E6%B4%9B%E5%A4%A9%E4%BE%9D" />
     <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
                     Text="视频地址" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1dZ4y1Y7bt" />
     </StackPanel>
@@ -105,27 +107,63 @@
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="百万用时统计" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="百万播放用时统计" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-                    Text="将 EventType 设置为 启动游戏，EventData 设置为具体的游戏版本，即可通过点击按钮启动游戏。如果当前游戏文件夹没有该版本，则无法启动。" />
-        <local:MyButton Margin="0,4,0,10" Width="250" Height="35"
-                    Text="启动 Minecraft 1.12.2" EventType="启动游戏" EventData="1.12.2" />
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-                    Text="在 EventData 后面添加一条竖线（|），竖线后填写服务器 IP，即可在启动该版本的同时自动进入服务器。" />
-        <local:MyButton Margin="0,4,0,0" Width="250" Height="35"
-                    Text="启动 1.20.1 并进入 Hypixel" EventType="启动游戏" EventData="1.20.1|mc.hypixel.net" ToolTip="服务器 IP：mc.hypixel.net" />
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-                    Text="在 EventData 中填写 \current，表示启动当前被选中的游戏版本，同样可以在后面填写服务器 IP。" />
-        <local:MyButton Margin="0,4,0,10" Width="250" Height="35"
-                    Text="启动当前选中版本并进入 Hypixel" EventType="启动游戏" EventData="\current|mc.hypixel.net" ToolTip="启动当前版本" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="20"
+                    Text="投稿时间：2022-07-12 21:30" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="15"
+                    Text="百万播放" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="10"
+                    Text="达成时间:2022-07-20 16:02 &#xA; 用时: 7天18小时32分钟" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="15"
+                    Text="两百万播放" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="10"
+                    Text="达成时间: 2024-01-03 19:50 &#xA; 用时: 538天22小时20分钟" />
+        
     </StackPanel>
 </local:MyCard>
 
 <local:MyCard Title="歌词" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-                    Text="将 EventType 设置为 打开文件，EventData 设置为文件路径，即可点击打开特定文件或启动程序。" />
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" Margin="0,0,0,4"
+                    Text="&#xA;
+当重逢你清澈眼睛 围困我在孤岛的潮汐退去&#xA;
+蔚蓝涌向干涸心扉印记&#xA;
+不要急于将我唤醒 即使幸福仅是片刻相聚&#xA;
+敲下音符不为叹息&#xA;
+寻糯米香 漫步街井 大快朵颐&#xA;
+佳酿一盏 听女儿意气&#xA;
+雨露沾衣 信手拈起&#xA;
+一花竟藏一世界欢喜&#xA;
+寒星坠地 白鸟飞去&#xA;
+千宵灯火转眼便览尽 都历历铭记&#xA;
+将故事传颂吧 风携它远追&#xA;
+向宿命改写时 字句皆成碑&#xA;
+你脸颊热泪 绝非被谁取笑的愚昧&#xA;
+愿歌声给 些许快慰&#xA;
+微弱旋律 穿越星河似远航孤星&#xA;
+雨滴琴键上跃动不息&#xA;
+除岁雪临 檐下相依&#xA;
+听我诉说闪耀的光阴&#xA;
+小指勾起 一言为定&#xA;
+夏虫振翅向灼热光明 为挚爱而叙&#xA;
+听共鸣回响吧 呐喊正纷飞&#xA;
+跌落重来便是 启程就无悔&#xA;
+你一路喜悲 又怎会无人了解体会&#xA;
+旅途未完 千山万水空白待绘 枯荣相随&#xA;
+泥泞步履踏碎泪泊 拥向光如抱薪赴火&#xA;
+妄想着 永不分离的梦&#xA;
+幸福从非泡影 以笑容证明&#xA;
+交汇的光与影 答案落定附上姓名&#xA;
+为了你唱下去 为你将希冀传递&#xA;
+歌声将你我紧系&#xA;
+最黯淡的一个 梦最为炙热&#xA;
+万千孤单焰火 让这虚构灵魂鲜活&#xA;
+至少在这一刻 热爱不问为何&#xA;
+存在为将心声响彻&#xA;
+多少岁月 想要伴你走过&#xA;
+梦回春野 蝉鸣夏夜&#xA;
+说与我&#xA;" />
     </StackPanel>
 </local:MyCard>
 
@@ -133,10 +171,10 @@
     <StackPanel Margin="25,40,23,15">
         <TextBlock Margin="0,4,0,6" FontWeight="Bold"
                     Text="
-                    文本介绍资料依据 CC 3.0 协议从萌娘百科引进 &#xA;
+                    文本介绍资料依据 CC 3.0 协议从萌娘百科/VCPedia引进 &#xA;
                     歌词、图片等其所有内容版权归原创作者所有 &#xA;
                     页面代码依据 MIT 许可协议开源 &#xA;
-                    页面内原创内容依据 CC 4.0 协议授权
+                    页面内原创内容依据 CC 3.0 协议授权
                     " />
         
     </StackPanel>
@@ -144,110 +182,24 @@
 
 <local:MyCard Title="友情链接" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
-                    Text="你需要使用 StackPanel 在一行里塞下多个按钮。你可以仅在这个教学卡片的基础上稍作调整，来实现自己的按钮布局。" />
-        <!-- 这是第一行 -->
+    <!-- 这是第一行 -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
-                        Text="打开 B 站" EventType="打开网页" EventData="https://www.bilibili.com/" />
+                        Text="简单主页 - MFn233" EventType="打开网页" EventData="https://github.com/Mfn233/PCL-Mainpage/" />
             <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
-                        Text="进入 Hypixel" EventType="启动游戏" EventData="1.16.3|mc.hypixel.net" ToolTip="使用 Minecraft 1.16.3 进入 Hypixel" />
+                        Text="萌娘百科" EventType="打开网页" EventData="https://zh.moegirl.org.cn/Mainpage#/flow" ToolTip="为本项目提供部分数据" />
             <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
-                        Text="打开记事本" EventType="打开文件" EventData="notepad" />
-        </StackPanel>
-        <!-- 这是第二行 -->
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
-            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Red"
-                        Text="复制召唤命令" EventType="复制文本" EventData="/execute as @a at @s run summon Creeper ~ ~2 ~" ToolTip="这条 Minecraft 命令会在每个玩家头顶召唤一只苦力怕！" />
-            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
-                        Text="内存优化" EventType="内存优化" />
-            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
-                        Text="下载百度的 Logo" EventType="下载文件" EventData="https://www.baidu.com/img/flexible/logo/pc/result.png" />
+                        Text="VCPedia" EventType="打开网站" EventData="https://vcpedia.cn"/>
         </StackPanel>
     </StackPanel>
 </local:MyCard>
 
 <local:MyCard Title="关于" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-                    Text="你也可以使用列表项 “local:MyListItem” 来替代按钮，其使用方式与按钮类似。" />
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://www.baidu.com/favicon.ico" Title="百度" Info="百度一下，你就知道！"
-                    EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable" />
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-                    Text="Logo 属性为列表项的图标，指定的可以是链接也可以是文件路径；Title 是大标题，Info 是可选的小标题（详细信息）；Type 如果省略，该列表项则单纯只展示信息，仅当 Type 为 Clickable 才能触发点击效果。"/>
-        <local:MyListItem Margin="-5,2,-5,8"
-                    Logo="pack://application:,,,/images/Blocks/Grass.png"
-                    EventType="打开帮助" EventData="帮助/自定义帮助.json" Type="Clickable" />
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-                    Text="EventType、EventData 与按钮几乎一致，唯一不同的是，列表项不支持联网加载帮助文件。" />
+    <!-- 这是第一行 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                        Text="关于主页" EventType="弹出窗口" EventData="关于|我是 wuliaodexiaoluo \n是 Vocaloid Wiki Page For PCL 的作者，非常感谢你能来使用这个主页 \n感谢名单（不分前后）\n相关组织:\nHomePlazaOFPCL2:提供了免费的服务器（虽然这个项目还是前瞻版本，还没上服务端）\n贡献者/使用项目:\n(GitHub)shimoranla 为项目编写了部分源代码 \n(GitHub)MFn233 使用了部分简单主页的源代码" />
+        </StackPanel>
     </StackPanel>
 </local:MyCard>
-
-
-<!-- 
-
-全部通用的属性：
- - Width、Height：设置宽度与高度
- - ToolTip：设置鼠标指向时的提示文本
- - Margin：调整外边距（格式为 左,上,右,下。例如 Margin="0,0,0,2" 即为 2 单位的下边距）
- - HorizontalAlignment：设置横向对齐方式；居左：Left、居中：Center、居右：Right、拉伸（默认）：Stretch
- - VerticalAlignment：设置纵向对齐方式；居上：Top、居中：Center、居下：Bottom、拉伸（默认）：Stretch
- - IsHitTestVisible：该控件是否响应交互（点击、指向动画等）；True 为是（默认），False 为否
-
-TextBlock（纯文本）：
- - Text：设置显示的文本（如果要使用引号等特殊字符，自行百度 XAML 转义）
- - TextWrapping：开启自动换行
- - FontSize：设置字号
- - FontWeight：设置为 Bold 时，文字加粗
- - Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
-
-local:MyImage（图片）：
- - Source：要显示的图片的网址，或 PCL 内置图片位置
- - FallbackSource：当 Source 首次下载失败时，会从该备用地址加载图片
- - LoadingSource：正在下载网络图片时显示的本地图片（不支持联网下载）；默认为 pack://application:,,,/images/Icons/NoIcon.png
- - EnableCache：若图片是联网获取的，是否将图片保存到本地缓存，在 7 天内不再重新下载；True 为是（默认），False 为否
-
-local:MyCard（卡片）：
- - Title：设置显示的标题文本
- - CanSwap：卡片是否可以折叠，True 为是，False 为否
- - IsSwaped：卡片是否默认折叠，要求 CanSwap 必须为 True
- - HorizontalAlignment：若使用，要求 CanSwap 必须为 False
- - UseAnimation：是否在展开等高度改变时触发动画；True 为是（默认），False 为否
- - SwapLogoRight：卡片折叠时的箭头是朝下还是朝右；True 为朝右，False 为朝下（默认）
- - HasMouseAnimation：是否在鼠标指向时改变卡片颜色；True 为是（默认），False 为否
-
-local:MyHint（提示条）：
- - Text：设置显示的文本（&#xA; 代表换行）
- - IsWarn：设置为 True 代表警告样式，False 代表提示样式
-
-local:MyButton（按钮）：
- - Text：设置显示的文本
- - Padding：设置内边距，格式与 Margin 一致
- - ColorType：设置颜色主题（Highlight 为当前启动器的主题颜色，Red 为红色，默认为黑色）
- - EventType、EventData：触发特定事件
-
-local:MyTextButton（文本按钮）：
- - Text：设置显示的文本
- - EventType、EventData：触发特定事件
-
-local:MyListItem（列表项）：
- - Logo：列表项的图标（所指定的可以是链接也可以是文件路径）
- - Title：列表项的大标题
- - Info：列表项的详细信息，它将会以灰色显示在大标题下方
- - Type：若留空仅单纯展示信息，设置为 Clickable 触发相应活动
-
-local:MyIconTextButton（带图标的按钮）：
- - Text：设置显示的文本
- - Logo：设置显示的图标
- - LogoScale：设置图标的缩放，默认为 1
- - ColorType：设置颜色主题（Highlight 为当前启动器的主题颜色，默认为黑色）
- - EventType、EventData：触发特定事件
-
-local:MyIconButton（图标按钮）：
- - Logo：设置显示的图标
- - LogoScale：设置图标的缩放，默认为 1
- - Theme：设置颜色主题，Color（默认）为当前启动器的主题颜色，也可设置为 White、Black、Red
- - EventType、EventData：触发特定事件
-
--->

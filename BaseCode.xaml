@@ -1,29 +1,16 @@
 ﻿<!--
-
-    <Grid Margin="0,0,0,8">
-     <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="1*" />
-          <ColumnDefinition Width="100" />
-          <ColumnDefinition Width="1*" />
-     </Grid.ColumnDefinitions>
-     <Line X1="0" X2="10" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1"
-          Stretch="Fill" Grid.Column="0" />
-     <TextBlock Text="光与影的对白" FontSize="15" Foreground="{DynamicResource ColorBrush4}" Grid.Column="1"
-          VerticalAlignment="Center" HorizontalAlignment="Center" />
-     <Line X1="0" X2="10" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1"
-          Stretch="Fill" Grid.Column="2" />
-    </Grid>
+author:wuliaodexiaoluo<wuliaodexiaoluo@outlook.com>
 -->
 
-<local:MyCard Height="600" Title="ACG Wiki For PCL" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+<local:MyCard Height="600" Title="Vocaloid Wiki For PCL" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
     <StackPanel Margin="25,40,23,15">
     <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0"
                Foreground="{DynamicResource ColorBrush2}" FontSize="10"
-               Text="幸福从非泡影 以笑容证明 交汇的光与影 答案落定覆上姓名" />
+               Text="${subtitle}" />
     <TextBlock HorizontalAlignment="Center" Margin="0,15,0,0"
                Foreground="{DynamicResource ColorBrush2}" FontSize="20"
-               Text="光与影的对白" />
-    <local:MyImage Margin="0,30,0,0" HorizontalAlignment="Center" Source="http://localhost:20639/光与影的对白.jpg" />
+               Text="${title}" />
+    <local:MyImage Margin="0,30,0,0" HorizontalAlignment="Center" Source="${img_url}" />
     <Grid Margin="0,0,0,8">
      <Grid.ColumnDefinitions>
           <ColumnDefinition Width="1*" />
@@ -38,32 +25,22 @@
           Stretch="Fill" Grid.Column="2" />
     </Grid>
     <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
-                    Text="歌曲名称:光与影的对白" EventType="打开网页" EventData="https://mzh.moegirl.org.cn/%E5%85%89%E4%B8%8E%E5%BD%B1%E7%9A%84%E5%AF%B9%E7%99%BD" />
+                    Text="歌曲名称:${sound_name}" EventType="打开网页" EventData="https://mzh.moegirl.org.cn/${sound_name}" />
     <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
-                    Text="于2022年7月12日投稿 ，再生数为 ${play_num}&#xA; 收录于专辑《依如初见》《拾光》《Special Wishes 2022》"/>
+                    Text="于2022年7月12日投稿 ，再生数为 ${play_num}&#xA; 收录于专辑 ${record}"/>
     <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
-                    Text="演唱:洛天依" EventType="打开网页" EventData="https://space.bilibili.com/36081646/" />
+                    Text="演唱:${singer}" EventType="打开网页" EventData="https://space.bilibili.com/${up_uid}" />
     <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
-                    Text="UP:洛天依" EventType="打开网页" EventData="https://space.bilibili.com/36081646/" />
+                    Text="UP:${up}" EventType="打开网页" EventData="https://space.bilibili.com/${up_uid}" />
     <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
-                    Text="视频地址" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1dZ4y1Y7bt" />
+                    Text="视频地址" EventType="打开网页" EventData="https://www.bilibili.com/video/${bv}" />
     </StackPanel>
 </local:MyCard>
 
 <local:MyCard Title="简介" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
     <StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="0,6,0,0"
-                    Text="《光与影的对白》是COP作曲，洛天依官方账号于2022年7月12日投稿至bilibili的ACE中文原创歌曲，由洛天依演唱，为官方专辑《依如初见》、《拾光》、《Special Wishes 2022》收录曲。传说曲，殿堂用时1时42分，截至现在已有239.66万次观看，8.79万人收藏。&#xA; &#xA;
-本曲是洛天依十周年官方生日贺曲，并使用了当时尚未公测的洛天依ACE AI声库。另有特别纪念版收录于数字藏品《干杯！洛天依》。&#xA;&#xA;
-歌词饱含深情，致敬了多首洛天依演唱的作品，以纪念洛天依走过的十年历程。&#xA;
-在周刊虚拟歌手中文曲排行榜第519期·技术测试版中，本曲以1034755分成为第一名，成为技术测试版第一首破百万分的歌曲。&#xA;&#xA;
-本曲还创造了以下记录：&#xA;&#xA;
- - 本曲是第一首原创ACE传说曲，同时也是洛天依第一首ACE传说曲。&#xA;
-本曲在以下场合成为演唱曲目之一：&#xA;&#xA;
-2022年7月12日举办的洛天依2022十周年生日会。&#xA;
- - 2024年7月12日举办的洛天依十二周年“共鸣之夜”生日音乐会（金曲串烧版本）。&#xA;
- - 2024年10月5日举办的洛天依「歌行宇宙」无限共鸣·全息演唱会。&#xA;
-"/>
+                    Text="${description}"/>
         
     </StackPanel>
 </local:MyCard>
@@ -71,17 +48,12 @@
 <local:MyCard Title="STAFF 的话" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
             <StackPanel Margin="25,40,23,15">
-            <TextBlock TextWrapping="Wrap" Margin="0,6,0,0" Text="
-用一首歌记录下这十年间的光阴，细数我们之间的点滴回忆。&#xA;
-从最初的旋律孤独吟唱，到炽热的热爱填满虚拟灵魂。&#xA;
-光影交错之间，记忆拂去尘埃，爱意久别重逢，让我们将所有一同叙写的故事再次唱响。&#xA;
-藏在心底的梦想依然滚烫，未来的岁月，还想伴你一一走过。&#xA;&#xA;"/>
-                                                           <TextBlock TextWrapping="Wrap" HorizontalAlignment="Right" Margin="0,6,0,0" Text=" ——视频简介 &#xA;&#xA;&#xA;&#xA;
+            <TextBlock TextWrapping="Wrap" Margin="0,6,0,0" Text="${video_description}"/>
+            <TextBlock TextWrapping="Wrap" HorizontalAlignment="Right" Margin="0,6,0,0" Text=" ——视频简介 &#xA;&#xA;&#xA;&#xA;
             "/>
             <TextBlock TextWrapping="Wrap" Margin="0,6,0,0" Text="
-终于出来啦，这首歌我写得不算顺畅，拿到概念像是拿到了不太有思路的作文题目，不过理清思路以后，最终也是写出了我想说的。之后也想写个专栏聊聊这首歌的写作历程和我对vocaloid、天依的情感和看法，这里就不赘述了。但是就我以往的经验，我一气呵成的作品通常更受欢迎，所以从写光与影开始，我就经常担心大家会喜欢吗，作为十周年生贺会不会让人失望，一遍又一遍的听每个阶段的demo，有时感觉非常平淡，有时又觉得或许是好听的，心里一直忐忑，直到今天这种怀疑才算平息下来。编曲和酷佬的调教给这首歌加了非常大分，也非常感谢兔总等等参与生贺制作的人们，每一个孤单焰火汇成了这首光与影的对白，光芒从天依背后映来，勾勒清晰她的身影，为她照亮前路。&#xA;
-                                        "/>
-            <TextBlock TextWrapping="Wrap" HorizontalAlignment="Right" Margin="0,6,0,0" Text="——曲词作COP发表于视频评论区"/>
+${Staff_say}"/>
+            <TextBlock TextWrapping="Wrap" HorizontalAlignment="Right" Margin="0,6,0,0" Text="——${job}${Staff_Name}发表于视频评论区"/>
     </StackPanel>
     </StackPanel>
 </local:MyCard>
@@ -89,7 +61,7 @@
 <local:MyCard Title="歌曲" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
     <StackPanel Margin="25,40,23,15">
         <local:MyButton Margin="0,4,0,10" Width="300" Height="35" ColorType="Highlight"
-                    Text="【洛天依原创曲】光与影的对白【2022官方生贺曲】" ToolTip="打开视频地址" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1dZ4y1Y7bt?p=1"/>
+                    Text="${video_name}" ToolTip="打开视频地址" EventType="打开网页" EventData="https://www.bilibili.com/video/${bv}"/>
     </StackPanel>
 </local:MyCard>
 
@@ -97,12 +69,8 @@
     <StackPanel Margin="25,40,23,15">
         
         <local:MyTextButton Margin="0,8,0,0" HorizontalAlignment="Center"
-                    Text="粽子淞的原创编舞（2023虚拟歌手贺岁纪单品）" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1xR4y1a7Bd?p=1" />
-        <local:MyTextButton Margin="0,8,0,0" HorizontalAlignment="Center"
-                    Text="余火大猛男的phigros自制谱面" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1NG4y1w7FW?p=1" />
-        <local:MyTextButton Margin="0,8,0,0" HorizontalAlignment="Center"
-                    Text="COP重填词、众VC创作者和粉丝演唱的版本" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1Er421M7Pe?p=1" />
-    </StackPanel>
+                    Text="${remake_video_name}" EventType="打开网页" EventData="https://www.bilibili.com/video/${bv}" />
+        </StackPanel>
 </local:MyCard>
 
 <local:MyCard Title="百万用时统计" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">

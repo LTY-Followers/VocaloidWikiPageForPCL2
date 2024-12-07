@@ -1,0 +1,3 @@
+{
+    "url":"${uri}?{arguments}&redirect_from=${refer_side}"
+}

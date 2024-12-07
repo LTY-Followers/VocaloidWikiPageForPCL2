@@ -14,7 +14,7 @@ with open(database,"r") as f:
 
 app = Flask.name(__name__)
 
-bind_url = ["https://pclhomeplazaoss.lingyunawa.top:20639","https://acgwikipage.mirror.luolingxue.us.kg","https://cloudflaretunnel.luolingxue.us.kg"]
+bind_url = ["https://pclhomeplazaoss.lingyunawa.top:20639","https://vocaloidwikipage.mirror.luolingxue.us.kg","https://cloudflaretunnel.luolingxue.us.kg"]
 
 @app.route("/api/<path>")
 def resolve_request(path):
