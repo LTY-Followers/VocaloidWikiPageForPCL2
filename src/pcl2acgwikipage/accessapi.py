@@ -18,7 +18,10 @@ http_ok = range(200,300)
 
 async def search(keywords:list=["洛天依","乐正绫","言和","初音未来"]):
     # 构建请求参数
+    query_data = {}
     off_set = 0
+    max_offset = 0
+    MaxRetry = 10
     for keyword in keywords:
         url_query["action"] = "query"
         url_query["list"] = "search"
@@ -26,13 +29,30 @@ async def search(keywords:list=["洛天依","乐正绫","言和","初音未来"]
         url_query["srsearch"] = keyword
         url_query["sroffset"] = off_set
 
-        request_data = request.Request(baseurl+parse.urlencode(url_query))
-
-        response:HTTPResponse = request.urlopen(request_data)
-        if response.getcode() not in http_ok:
-            raise HTTPException("远程服务器")
-        else:
+        while not max_offset - off_set == 0:
+            request_data = request.Request(baseurl+parse.urlencode(url_query))
+        
+            try:
+                response:HTTPResponse = request.urlopen(request_data)
+            except HTTPException as e:
+                if MaxRetry == 0:
+                    break
+                else:
+                    MaxRetry -= 1
+                    continue
+                    
+        
             encode_data = json.loads(response.read().decode("utf-8"))
+
+            for result in encode_data["query"]["search"]["title"]:
+                if result == "":
+                    off_set = max_offset
+                    continue
+                else:
+                    
+            
+            query_data[keyword] = 
+
 
 
 
