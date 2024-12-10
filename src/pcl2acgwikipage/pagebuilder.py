@@ -22,3 +22,13 @@ url_query = {
 name = input()
 
 url_query["title"] = name
+
+
+def textblock():
+    return
+def Image():
+    return
+def localImage():
+    return
+def MyCard():
+    return
