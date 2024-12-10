@@ -1,0 +1,162 @@
+<local:MyCard Title="Vocaloid Wiki For PCL" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+    <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0"
+               Foreground="{DynamicResource ColorBrush2}" FontSize="10"
+               Text="时光见证热爱，初心未曾更改，用歌声与舞蹈约定未来" />
+    <local:MyTextButton HorizontalAlignment="Center" Margin="0,15,0,0" FontSize="15"
+               Text="本曲在 bilibili 播放次数超过 10 万，获得 ACE 殿堂曲称号" EventType="打开网页" EventData="https://mzh.moegirl.org.cn/ACE%E6%AE%BF%E5%A0%82%E6%9B%B2" />
+    <TextBlock HorizontalAlignment="Center" Margin="0,15,0,0"
+               Foreground="{DynamicResource ColorBrush2}" FontSize="20"
+               Text="此刻Memories" />
+    <local:MyImage Margin="0,30,0,0" HorizontalAlignment="Center" Source="https://raw.githubusercontent.com/wuliaodexiaoluo/VocaloidWikiPageForPCL2/main/image/%E6%AD%A4%E5%88%BBmemories.jpg" />
+    <Grid Margin="0,0,0,8">
+     <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1*" />
+          <ColumnDefinition Width="80" />
+          <ColumnDefinition Width="1*" />
+     </Grid.ColumnDefinitions>
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"
+          Stretch="Fill" Grid.Column="0" />
+     <TextBlock Text="简介" FontSize="15" Foreground="{DynamicResource ColorBrush4}" Grid.Column="1"
+          VerticalAlignment="Center" HorizontalAlignment="Center" />
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"
+          Stretch="Fill" Grid.Column="2" />
+    </Grid>
+    <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
+                    Text="歌曲名称:此刻Memories" EventType="打开网页" EventData="https://mzh.moegirl.org.cn/此刻Memories" />
+    <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
+                    Text="2024年5月18日投稿中文版，再生数为67.98万 &#xA;2024年5月19日投稿日文版，再生数为2248（最终记录）"/>
+    <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
+                    Text="演唱:洛天依" EventType="打开网页" EventData="https://mzh.moegirl.org.cn/洛天依" />
+    <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
+                    Text="UP:洛天依" EventType="打开网页" EventData="https://mzh.moegirl.org.cn/洛天依" />
+    <local:MyTextButton Margin="0,8,0,10" HorizontalAlignment="Center"
+                    Text="视频地址" EventType="打开网页" EventData="https://www.bilibili.com/BV1ds421A7EX" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="简介" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,6,0,0"
+                    Text="《此刻Memories》是洛天依官方账号于2024年5月18日投稿至bilibili的ACE中文原创歌曲，由洛天依演唱。2024年5月19日AtonyP投稿了VOCALOID日文版本。截至现在中文版已达成殿堂曲，有67.98万次观看，2.82万人收藏；日文版删除前则有2248次观看，282人收藏（最终记录）。
+                    &#xA;&#xA;本曲是2024年Bilibili Dancing Festival主题曲。本曲PV中使用洛天依十周年模型对应BDF十周年，表盘舞台则象征洛天依12周年之意。
+                    &#xA;&#xA;日文版本在B站的投稿番号原为BV1zZ421s7Tk，但因不明原因已被删除。
+                    &#xA;另有李艺彤演唱的人声本家。"
+/>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="STAFF 的话" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+            <StackPanel Margin="25,40,23,15">
+            <TextBlock TextWrapping="Wrap" Margin="0,6,0,0" Text="
+Bilibili Dancing Festival2024——哔哩哔哩舞蹈嘉年华X洛天依&#xA;
+十周年主题曲《此刻Memories》&#xA;
+“时光见证热爱，初心未曾更改，用歌声与舞蹈约定未来！&#xA;&#xA;"/>
+                                                           <TextBlock TextWrapping="Wrap" HorizontalAlignment="Right" Margin="0,6,0,0" Text=" ——视频简介
+            "/>
+    </StackPanel>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="歌曲" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyButton Margin="0,4,0,10" Width="400" Height="35" ColorType="Highlight"
+                    Text="“在闪烁星光下相聚吧！”此刻Memories【洛天依XBDF2024十周年主题曲】" ToolTip="打开视频地址" EventType="打开网页" EventData="https://www.bilibili.com/BV1ds421A7EX"/>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="二次创作" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        
+        <local:MyTextButton Margin="0,8,0,0" HorizontalAlignment="Center"
+                    Text="此刻Memories【BDF2024主题曲 | 十周年】" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1dD421A7sY?p=1" />
+        <local:MyTextButton Margin="0,8,0,0" HorizontalAlignment="Center"
+                    Text="【洛天依X李艺彤】此刻Memories「录音室版」" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1gf42127Hd?p=1" />
+        <local:MyTextButton Margin="0,8,0,0" HorizontalAlignment="Center"
+                    Text="此刻Memories【2233版】 [1/1]" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1YM4m1k7kB?p=1" />
+    </StackPanel>
+</local:MyCard>
+
+<!--
+<local:MyCard Title="百万播放用时统计" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+      
+        
+    </StackPanel>
+</local:MyCard>
+-->
+
+<local:MyCard Title="歌词" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" Margin="0,0,0,4"
+                    Text="&#xA;
+指尖划过的色彩 汗滴奏出的节拍&#xA;
+脚步间飞过青色的未来&#xA;
+故事扉页怎样翻开 三千日夜未曾涂改&#xA;
+再回望相片中纷飞尘埃 真挚热爱&#xA; &#xA;
+熟悉的天台 用舞步写下的对白&#xA;
+远行着的你 请别忘记 曾许诺过的热爱&#xA;
+再会时感慨 像岁月给出的喝彩&#xA;
+那时候的你 因何坚信 前路美景盛开&#xA; &#xA;
+也曾聊起未来 仰望头顶星海&#xA;
+往事该如何讲述 才算圆满了期待&#xA;&#xA;
+灯光定格的姿态 梦中熟悉的节拍&#xA;
+舞步中描绘出璀璨的现在&#xA;
+挥动双臂 涂抹喜悦色彩&#xA;
+把最初的约定 写进云层空白&#xA;
+用时光描绘彼此的舞台 是最闪耀存在&#xA;&#xA;
+谈笑间坦白 这一路你我怎样走来&#xA;
+而关于初衷 不必多说 因它不会更改&#xA;&#xA;
+那时仰望星海 如今忽然明白&#xA;
+心愿经历了时间 才身披动人色彩&#xA;&#xA;
+关于时间的变化 约定它实现了吗&#xA;
+重聚是你我共同的回答&#xA;
+迈着旋律的步伐 在闪烁星光下&#xA;
+把多余的顾虑 全部都抛下&#xA;&#xA;
+时光见证的热爱&#xA;&#xA;
+时光见证的热爱 融汇感触的节拍&#xA;
+舞步中约定好下一个未来&#xA;
+十年时间 初心未曾更改&#xA;
+所以关于明天 也可以被信赖&#xA;
+用重聚回应最初的期待&#xA;
+将约定刻在时间的舞台 留给未来" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="许可协议" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock Margin="0,4,0,6" FontWeight="Bold"
+                    Text="
+                    文本介绍资料依据 CC 3.0 协议从萌娘百科/VCPedia引进 &#xA;
+                    歌词、图片等其所有内容版权归原创作者所有 &#xA;
+                    页面代码依据 MIT 许可协议开源 &#xA;
+                    页面内原创内容依据 CC 3.0 协议授权
+                    " />
+        
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="友情链接" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+    <!-- 这是第一行 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                        Text="简单主页 - MFn233" EventType="打开网页" EventData="https://github.com/Mfn233/PCL-Mainpage/" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                        Text="萌娘百科" EventType="打开网页" EventData="https://zh.moegirl.org.cn/Mainpage#/flow" ToolTip="为本项目提供部分数据" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                        Text="VCPedia" EventType="打开网站" EventData="https://vcpedia.cn"/>
+        </StackPanel>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="关于" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+    <!-- 这是第一行 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                        Text="关于主页" EventType="弹出窗口" EventData="关于|我是 wuliaodexiaoluo \n是 Vocaloid Wiki Page For PCL 的作者，非常感谢你能来使用这个主页 \n感谢名单（不分前后）\n相关组织:\nHomePlazaOFPCL2:提供了免费的服务器（虽然这个项目还是前瞻版本，还没上服务端）\n贡献者/使用项目:\n(GitHub)shimoranla 为项目编写了部分源代码 \n(GitHub)MFn233 使用了部分简单主页的源代码" />
+        </StackPanel>
+    </StackPanel>
+</local:MyCard>
