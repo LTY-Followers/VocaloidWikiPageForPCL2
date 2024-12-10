@@ -16,8 +16,11 @@ smmsapi="https://smms.app/api/v2"
 # Url 查询参数
 url_query = {}
 # WebP 转码选项
-option = {
 
+options = {
+    "quality": 85,  
+    "lossless": True,  # 显然图片质量必须足够高
+    "transparency": True, 
 }
 # 适用于 bilibili 的请求头
 headers = {
@@ -78,7 +81,7 @@ def ReadImageUriFromJSON(bvid,search_type="video"):
 def CoverImage(file_name,new_file_name):
     path = pathlib.Path().cwd().joinpath("database",file_name)
     image_handle = Image.open(path)
-    image_handle.save(path.replace(file_name,new_file_name))
+    image_handle.save(path.replace(file_name,new_file_name),format="webp",options=options)
 
 # 上传到 SMMS
 def UploadImage(filename,auth_key):
