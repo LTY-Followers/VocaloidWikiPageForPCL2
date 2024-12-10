@@ -1,0 +1,31 @@
+name: 数据获取
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: CheckOut Code
+        uses: actions/checkout@v4
+      
+      - name: setup python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.10
+
+      - name: "Prapare Libraries"
+        run: python -m pip install pdm
+      
+      - name: "Install"
+        run: python -m pdm install
+
+      - name: "Run Code"
+        run: pdm run src/startup.py --timeout=5h
+
+      - name: "Upload Result"
+        run: python src\push.py --commit="sync code at $date" --author-name={{$secrets.AUTHOR_MAIN_NAME}} --email={{$secrets.AUTHOR_MAIN_EMAIL}}
