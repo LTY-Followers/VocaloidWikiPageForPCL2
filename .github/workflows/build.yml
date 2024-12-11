@@ -44,5 +44,5 @@ jobs:
         run: python -m pdm run src\pcl2acgwikipage\push.py copy --localfile=metainfo/manifest.json --remotefile=metainfo/manifest.json --url="https://master-api.luolingxue.us.kg/repos/manifest.json" --repos=VocaloidWikiPage --test-mode=true
       # 将解析页面存储到主控
       - name: "Deoply to Master Control"
-        run: python -m pdm run src\pcl2acgwikipage\push.py --server="https://master-api.luolingxue.us.kg/projects/vocaloidwikipage" --login={{$secrets.REPO_API_KEY}} --path=./resloved/*;./templates/* --fast-push=true --test-mode=true
+        run: python -m pdm run src\pcl2acgwikipage\push.py --server="https://master-api.luolingxue.us.kg/projects/vocaloidwikipage" --login={{$secrets.REPO_API_KEY}} --path="./resloved/*;./templates/*" --fast-push=true --test-mode=true
       
