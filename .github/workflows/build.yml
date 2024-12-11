@@ -38,7 +38,7 @@ jobs:
         run: python -m pdm run src\pcl2acgwikipage\commit.py --signas={{$secrets.SUB_AUTHOR_NAME}} --test-mode=true
       # 检出结果到另一个仓库
       - name: "Upload Result"
-        run: python -m pdm run src\pcl2acgwikipage\push.py --message="sync code at $date" --repos="vocalpodwikipage" --author-name={{$secrets.AUTHOR_NAME}} --email={{$secrets.AUTHOR_EMAIL}}  --api-key={{$secrets.GITHUB_API_KEY}} --test-mode=true
+        run: python -m pdm run src\pcl2acgwikipage\push.py
       # 检出 Manifest
       - name: "POST CheckOut Manifest"
         run: python -m pdm run src\pcl2acgwikipage\push.py copy --localfile=metainfo/manifest.json --remotefile=metainfo/manifest.json --url="https://master-api.luolingxue.us.kg/repos/manifest.json" --repos=VocaloidWikiPage --test-mode=true
