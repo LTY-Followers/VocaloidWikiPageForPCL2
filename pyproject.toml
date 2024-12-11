@@ -1,5 +1,5 @@
 [project]
-name = "PCL2 Vocaloid Wiki Page"
+name = "PCL2VocaloidWikiPage"
 version = "0.1.0"
 description = "基于 Media API 的自动化百科 WPF 页面生成工具"
 authors = [
