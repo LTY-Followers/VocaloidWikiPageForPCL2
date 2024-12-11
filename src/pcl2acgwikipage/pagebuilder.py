@@ -25,10 +25,10 @@ url_query["title"] = name
 
 
 def textblock():
-    return
-def Image():
-    return
-def localImage():
-    return
-def MyCard():
-    return
+    return f"<TextBlock />\n"
+def Image(Source,HorizontalAlignment="center",Margin="0,0,0,6"):
+    return f"<Image Margin={Margin} Source={Source} HorizontalAlignment={HorizontalAlignment} />\n"
+def localImage(Source,FallbackSource="",HorizontalAlignment="center",Margin="0,0,0,6"):
+    return f"<local:MyImage Margin={Margin} Source={Source} HorizontalAlignment={HorizontalAlignment} FallbackSource={FallbackSource} />\n"
+def MyCard(title,Margin,CanSwap,IsSwaped):
+    return f"<local:MyCard Title={title} Margin={Margin} CanSwap={str(CanSwap)} IsSwaped={str(IsSwaped)}>\n"

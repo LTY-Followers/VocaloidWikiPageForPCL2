@@ -17,7 +17,7 @@ jobs:
       - name: setup python 3.10
         uses: actions/setup-python@v5
         with:
-          python-version: 3.10
+          python-version: "3.10"
       # 安装 PDM
       - name: "Prapare Libraries"
         run: python -m pip install pdm
@@ -26,19 +26,23 @@ jobs:
         run: python -m pdm install
       # 从主控检出 Manifest 文件
       - name: "Checkout Manifest"
-        run: python -m pdm run src\push.py copy --url=https://master-api.luolingxue.us.kg/repos/manifest.json --repos=VocaloidWikiPage --remotefile=metainfo/manifest.json --login={{$secrets.API_KEY}} --localfile=metainfo/manifest.json
+        run: python -m pdm run src\pcl2acgwikipage\push.py copy --url="https://master-api.luolingxue.us.kg/repos/manifest.json" --repos="VocaloidWikiPage" --remotefile="metainfo/manifest.json" --login="{{$secrets.API_KEY}}" --localfile="metainfo/manifest.json" 
+      # 检查主控剩余存储
+      - name: "Check Stroage"
+        run: python -m pdm run src\pcl2acgwikipage\api.py checkstroage --server="master-api.luolingxue.us.kg;pclhomeplazaoss.lingyunawa.top:20639"
       # 执行代码，并预留 1 小时用于提交内容
       - name: "Run Code"
-        run: python -m pdm run src\startup.py --timeout=5h
+        run: python -m pdm run src\pcl2acgwikipage\startup.py --timeout=5h 
       # 更新 Manifest 文件
       - name: "Update Manifest"
-        run: python src\commit.py --signas={{$secrets.AUTHOR_NAME}} 
-
+        run: python -m pdm run src\pcl2acgwikipage\commit.py --signas={{$secrets.SUB_AUTHOR_NAME}} 
+      # 检出结果到另一个仓库
       - name: "Upload Result"
-        run: python src\push.py --commit="sync code at $date" --author-name={{$secrets.AUTHOR_NAME}} --email={{$secrets.AUTHOR_EMAIL}}  --api-key={{$secrets.API_KEY}}
-      
+        run: python -m pdm run src\pcl2acgwikipage\push.py
+      # 检出 Manifest
       - name: "POST CheckOut Manifest"
-        run: python src\push.py copy --localfile=metainfo/manifest.json --remotefile=metainfo/manifest.json --url=https://master-api.luolingxue.us.kg/repos/manifest.json --push
+        run: python -m pdm run src\pcl2acgwikipage\push.py copy --localfile=metainfo/manifest.json --remotefile=metainfo/manifest.json --url="https://master-api.luolingxue.us.kg/repos/manifest.json" --repos=VocaloidWikiPage 
+      # 将解析页面存储到主控
       - name: "Deoply to Master Control"
-        run: python src\push.py --server="https://master-api.luolingxue.us.kg/projects/vocaloidwikipage" --login={{$secrets.API_KEY}} --path=./resloved/*;./templates/* --fast-push=true
+        run: python -m pdm run src\pcl2acgwikipage\push.py --server="https://master-api.luolingxue.us.kg/projects/vocaloidwikipage" --login={{$secrets.REPO_API_KEY}} --path="./resloved/*;./templates/*" --fast-push=true 
       
