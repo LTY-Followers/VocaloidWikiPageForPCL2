@@ -1,4 +1,5 @@
 import importlib
+exit(0)
 
 async def start():
     accessapi = importlib.import_module(".accessapi")
