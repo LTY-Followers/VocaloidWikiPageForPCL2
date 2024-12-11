@@ -1,1 +1,3 @@
-exit(0)
+from requests import Session
+
+session = Session()
