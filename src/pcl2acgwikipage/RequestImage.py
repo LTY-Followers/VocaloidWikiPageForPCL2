@@ -28,11 +28,11 @@ headers = {
     "referer":"https://www.bilibili.com/",
     "Host":"search.bilibili.com"
 }
-# 避免死锁
-MaxRetry = 5
-# 从 HTML 页面获取图片地址（其实本来可以用 bilibili api，但是直到写完才想起来可以用 API... 但是舍不得删了，就这样吧，也可以当个 FallBack）
+# 从 HTML 页面获取图片地址
 def ReadImageUriFromHTML(bvid):
     # 使用 bvid 搜索防止一些二创版本的图片被爬进数据库里，反正使用 bvid 搜索结果永远只有一个
+    # 避免死锁
+    MaxRetry = 5
     url_query["keyword"] = bvid
     #避免 API 封禁或请求格式错误导致任务死锁，如果真让一个任务连续运行了 6h+ 后面就没时间提交了
     while not MaxRetry == 0:
@@ -52,31 +52,8 @@ def ReadImageUriFromHTML(bvid):
             # 通常 web-search-common-cover 才是视频封面
             if "web-search-common-cover" in source["src"]:
                 img_direct_url = source["src"]
-                return "https:" + img_direct_url
+                return "https:" + img_direct_url.split("@")[0]
     return ""
-# 从 api 获取响应
-def ReadImageUriFromJSON(bvid,search_type="video"):
-    # 同上
-    url_query["keyword"] = bvid
-    url_query["type"] = search_type
-    headers["Host"] = "api.bilibili.com"
-    while not MaxRetry == 0:
-        req = request.Request(url=bili_search_json_api,headers=headers)
-        try:
-            resp:HTTPException = request.urlopen(req)
-        except HTTPException as e:
-            time.sleep(1*60)
-            MaxRetry -= 1
-            continue
-        resp_json = json.loads(resp.read().decode("utf-8"))
-        if resp_json["result"]:
-            for content in resp_json["result"]:
-                img_direct_url = content["pic"]
-                return "https:" + img_direct_url
-
-            
-
-
 # 图片转 WebP 节约流量
 def CoverImage(file_name,new_file_name):
     path = pathlib.Path().cwd().joinpath("database",file_name)
