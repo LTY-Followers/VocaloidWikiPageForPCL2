@@ -30,5 +30,5 @@ def Image():
     return
 def localImage():
     return
-def MyCard():
-    return
+def MyCard(title,Margin,CanSwap,IsSwaped):
+    return "<local:MyCard Title="+str(title)+"Margin="+str(Margin)+" CanSwap="+str(True)+" IsSwaped="+str(False)+">
