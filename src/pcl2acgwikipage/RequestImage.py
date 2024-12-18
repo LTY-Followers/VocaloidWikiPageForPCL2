@@ -62,6 +62,11 @@ def CoverImage(file_name,new_file_name):
     image_handle = Image.open(path)
     image_handle.save(path.replace(file_name,new_file_name),format="webp",options=options)
 
+# 通过 Service API 提交图片转码任务
+
+def service_api_img_cover():
+    pass
+
 # 上传到 SMMS
 def UploadImage(filename,auth_key,session:Session):
     path = pathlib.Path().cwd().joinpath("database",filename)
